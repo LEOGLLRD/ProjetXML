@@ -2,6 +2,7 @@
     <xsl:template match="/">
         <html>
             <head>
+                <script src="https://kit.fontawesome.com/f38ee08163.js" crossorigin="anonymous"></script>
                 <title>Restaurant</title>
                 <style type="text/css">
                     body{
@@ -106,7 +107,7 @@
                                         <xsl:for-each select="fromage">
                                             <li>
                                                 <div class="nom">
-                                                    <xsl:value-of select="nom"/>
+                                                    <i class="fa-solid fa-cheese"></i><xsl:value-of select="nom"/>
                                                 </div>
                                                 <br/>
                                                 <xsl:value-of select="description"/>
@@ -135,21 +136,21 @@
                             </xsl:if>
                         </div>
                     </xsl:for-each>
-                    <div class="boissons">
-                        <p class="foodTitle">Boissons :</p>
-                        <ul>
-                            <xsl:for-each select="//boisson">
-                                <div class="boisson">
-                                    <li>
-                                        <xsl:value-of select="nom"/> : <xsl:value-of select="@prix"/>€
-                                    </li>
-                                </div>
-                            </xsl:for-each>
-                        </ul>
-                    </div>
+
 
                 </div>
-
+                <div class="boissons">
+                    <p class="foodTitle">Boissons :</p>
+                    <ul>
+                        <xsl:for-each select="//boisson">
+                            <div class="boisson">
+                                <li>
+                                    <xsl:value-of select="nom"/> : <xsl:value-of select="@prix"/>€
+                                </li>
+                            </div>
+                        </xsl:for-each>
+                    </ul>
+                </div>
             </body>
         </html>
     </xsl:template>

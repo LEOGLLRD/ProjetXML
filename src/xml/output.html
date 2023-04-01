@@ -3,25 +3,35 @@
 <head><title>Restaurant</title>
     <style type="text/css">
         body {
-            background-image: url("fond-sans-menu-3.jpg");
-            background-size: cover;
+            background-image: url("vecteur-de-dessin-de-croquis-de-nourriture-et-de-boissons-73260915.jpg");
         }
 
         #menus {
             text-align: center;
+            display: grid;
+            grid-template-columns: repeat(3, 2fr);
+            grid-auto-rows: auto;
         }
 
-        .menu {
-            margin: 0 auto;
-            margin-bottom: 100px;
-            width: 50%;
+        .menu{
+            -webkit-box-shadow: 5px 5px 15px 5px #000000;
+            box-shadow: 5px 5px 15px 5px #000000;
+            background-color: lightgrey;
+            margin-left: 150px;
+            margin-top: 100px;
+            border-radius: 50px;
         }
 
+        .boisson{
+            margin-left: 30px;
+            margin-bottom: 10px;
+        }
         ul {
             list-style-type: none;
         }
 
         li {
+            margin-right: 15px;
             text-align: justify;
         }
 
@@ -48,15 +58,26 @@
         }
 
         .boissons {
+            height: 200px;
+            text-align: center;
+            border-radius: 50px;
+            -webkit-box-shadow: 5px 5px 15px 5px #000000;
+            box-shadow: 5px 5px 15px 5px #000000;
+            background-color: aliceblue;
             margin: 0 auto;
             margin-bottom: 30px;
             width: 50%;
         }
 
         h1 {
+            width: 60%;
+            background-color: white;
+            font-size: 100px;
             text-decoration: underline;
             margin-bottom: 90px;
             text-align: center;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .nom {
@@ -286,30 +307,31 @@
             </ul>
         </div>
     </div>
-    <div class="boissons"><p class="foodTitle">Boissons :</p>
-        <ul>
-            <div class="boisson">
-                <li>Eau Plate : 1€
-                </li>
-            </div>
-            <div class="boisson">
-                <li>Eau Gazeuse : 1.5€
-                </li>
-            </div>
-            <div class="boisson">
-                <li>Coca Cola : 2.5€
-                </li>
-            </div>
-            <div class="boisson">
-                <li>Café : 2€
-                </li>
-            </div>
-            <div class="boisson">
-                <li>Vin : 4€
-                </li>
-            </div>
-        </ul>
-    </div>
+
+</div>
+<div class="boissons"><p class="foodTitle">Boissons :</p>
+    <ul>
+        <div class="boisson">
+            <li>Eau Plate : 1€
+            </li>
+        </div>
+        <div class="boisson">
+            <li>Eau Gazeuse : 1.5€
+            </li>
+        </div>
+        <div class="boisson">
+            <li>Coca Cola : 2.5€
+            </li>
+        </div>
+        <div class="boisson">
+            <li>Café : 2€
+            </li>
+        </div>
+        <div class="boisson">
+            <li>Vin : 4€
+            </li>
+        </div>
+    </ul>
 </div>
 </body>
 </html>

@@ -58,7 +58,7 @@
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-    
+
     <!-- Type Child -->
     <xs:complexType name="typeChild">
         <xs:sequence>
