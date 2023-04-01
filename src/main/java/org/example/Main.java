@@ -31,7 +31,7 @@ public class Main {
 
 
             //Transforme un fichier xml en html
-            //XSLTTransformFromCatalogue.transform("src/xml/Menu.xml", "src/xml/Menu.xsl", "src/xml/output.html");
+            XSLTTransformFromCatalogue.transform("src/xml/Menu.xml", "src/xml/Menu.xsl", "src/xml/output.html");
 
 
             //Ajoute une nouvelle boisson

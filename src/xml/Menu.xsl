@@ -2,55 +2,102 @@
     <xsl:template match="/">
         <html>
             <head>
-                <script src="https://kit.fontawesome.com/f38ee08163.js" crossorigin="anonymous"></script>
                 <title>Restaurant</title>
                 <style type="text/css">
-                    body{
-                    background-image: url("fond-sans-menu-3.jpg");
-                    background-size: cover;
+                    body {
+                    background-image: url("vecteur-de-dessin-de-croquis-de-nourriture-et-de-boissons-73260915.jpg");
                     }
-                    #menus{
+
+                    #menus {
                     text-align: center;
+                    display: grid;
+                    grid-template-columns: repeat(3, 2fr);
+                    grid-auto-rows: auto;
                     }
+
                     .menu{
-                    margin: 0 auto;
-                    margin-bottom: 100px;
-                    width: 50%;
+                    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+                    box-shadow: 5px 5px 15px 5px #000000;
+                    background-color: lightgrey;
+                    margin-left: 150px;
+                    margin-top: 100px;
+                    border-radius: 50px;
                     }
-                    ul{
+
+                    .boisson{
+                    margin-left: 30px;
+                    margin-bottom: 10px;
+                    }
+                    .moyen{
+                    margin-left: 30px;
+                    margin-bottom: 10px;
+                    }
+                    ul {
                     list-style-type: none;
                     }
-                    li{
+
+                    li {
+                    margin-right: 15px;
                     text-align: justify;
                     }
-                    .foodTitle{
+
+                    .foodTitle {
                     font-size: larger;
-                    font-weight:bolder;
+                    font-weight: bolder;
                     }
-                    .entree{
+
+                    .entree {
 
                     margin-bottom: 30px;
                     }
-                    .plat{
+
+                    .plat {
                     margin-bottom: 30px;
                     }
-                    .fromage{
+
+                    .fromage {
                     margin-bottom: 30px;
                     }
-                    .dessert{
+
+                    .dessert {
                     margin-bottom: 30px;
                     }
-                    .boissons{
+
+                    .boissons {
+                    height: 200px;
+                    text-align: center;
+                    border-radius: 50px;
+                    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+                    box-shadow: 5px 5px 15px 5px #000000;
+                    background-color: aliceblue;
                     margin: 0 auto;
                     margin-bottom: 30px;
                     width: 50%;
                     }
-                    h1{
+                    .paiements {
+                    height: 200px;
+                    text-align: center;
+                    border-radius: 50px;
+                    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+                    box-shadow: 5px 5px 15px 5px #000000;
+                    background-color: aliceblue;
+                    margin: 0 auto;
+                    margin-bottom: 30px;
+                    width: 50%;
+                    }
+
+                    h1 {
+                    width: 60%;
+                    background-color: white;
+                    font-size: 100px;
                     text-decoration: underline;
                     margin-bottom: 90px;
-                    text-align:center;
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
                     }
-                    .nom{
+
+                    .nom {
                     font-weight: bolder;
                     margin-bottom: -20px;
                     }
@@ -107,7 +154,8 @@
                                         <xsl:for-each select="fromage">
                                             <li>
                                                 <div class="nom">
-                                                    <i class="fa-solid fa-cheese"></i><xsl:value-of select="nom"/>
+                                                    <i class="fa-solid fa-cheese"></i>
+                                                    <xsl:value-of select="nom"/>
                                                 </div>
                                                 <br/>
                                                 <xsl:value-of select="description"/>
@@ -136,8 +184,6 @@
                             </xsl:if>
                         </div>
                     </xsl:for-each>
-
-
                 </div>
                 <div class="boissons">
                     <p class="foodTitle">Boissons :</p>
@@ -146,6 +192,18 @@
                             <div class="boisson">
                                 <li>
                                     <xsl:value-of select="nom"/> : <xsl:value-of select="@prix"/>€
+                                </li>
+                            </div>
+                        </xsl:for-each>
+                    </ul>
+                </div>
+                <div class="paiements">
+                    <p class="foodTitle">Moyens de paiement :</p>
+                    <ul>
+                        <xsl:for-each select="//moyenPaiement">
+                            <div class="moyen">
+                                <li>
+                                    <xsl:value-of select="text()"/>
                                 </li>
                             </div>
                         </xsl:for-each>

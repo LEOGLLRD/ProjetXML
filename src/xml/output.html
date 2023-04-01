@@ -13,7 +13,7 @@
             grid-auto-rows: auto;
         }
 
-        .menu{
+        .menu {
             -webkit-box-shadow: 5px 5px 15px 5px #000000;
             box-shadow: 5px 5px 15px 5px #000000;
             background-color: lightgrey;
@@ -22,10 +22,16 @@
             border-radius: 50px;
         }
 
-        .boisson{
+        .boisson {
             margin-left: 30px;
             margin-bottom: 10px;
         }
+
+        .moyen {
+            margin-left: 30px;
+            margin-bottom: 10px;
+        }
+
         ul {
             list-style-type: none;
         }
@@ -69,6 +75,18 @@
             width: 50%;
         }
 
+        .paiements {
+            height: 200px;
+            text-align: center;
+            border-radius: 50px;
+            -webkit-box-shadow: 5px 5px 15px 5px #000000;
+            box-shadow: 5px 5px 15px 5px #000000;
+            background-color: aliceblue;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            width: 50%;
+        }
+
         h1 {
             width: 60%;
             background-color: white;
@@ -88,6 +106,41 @@
 </head>
 <body><h1>Catalogue du Restaurant :</h1>
 <div id="menus">
+    <div class="menu"><h2>Menu à 17.5€, boisson
+        incluse au choix</h2>
+        <div class="entree"><p class="foodTitle">Entrée(s) :</p>
+            <ul>
+                <li>
+                    <div class="nom">TESTNOM</div>
+                    <br/>TESTDESCRIPTION
+                </li>
+            </ul>
+        </div>
+        <div class="plat"><p class="foodTitle">Plat(s) :</p>
+            <ul>
+                <li>
+                    <div class="nom">TESTNOM</div>
+                    <br/>TESTDESCRIPTION
+                </li>
+            </ul>
+        </div>
+        <div class="fromage"><p class="foodTitle">Fromage(s) :</p>
+            <ul>
+                <li>
+                    <div class="nom"><i class="fa-solid fa-cheese"/>TESTNOM</div>
+                    <br/>TESTDESCRIPTION
+                </li>
+            </ul>
+        </div>
+        <div class="dessert"><p class="foodTitle">Dessert(s) :</p>
+            <ul>
+                <li>
+                    <div class="nom">TESTNOM</div>
+                    <br/>TESTDESCRIPTION
+                </li>
+            </ul>
+        </div>
+    </div>
     <div class="menu"><h2>Menu à 20€, boisson
         incluse au choix</h2>
         <div class="entree"><p class="foodTitle">Entrée(s) :</p>
@@ -111,7 +164,7 @@
         <div class="fromage"><p class="foodTitle">Fromage(s) :</p>
             <ul>
                 <li>
-                    <div class="nom">Le Bleu d'Auvergne</div>
+                    <div class="nom"><i class="fa-solid fa-cheese"/>Le Bleu d'Auvergne</div>
                     <br/>un fromage français de lait de vache du Massif central.
                 </li>
             </ul>
@@ -211,6 +264,72 @@
         </div>
     </div>
     <div class="menu"><h2>Menu à 12.5€, boisson
+        incluse au choix</h2>
+        <div class="entree"><p class="foodTitle">Entrée(s) :</p>
+            <ul>
+                <li>
+                    <div class="nom">entree1</div>
+                    <br/>Description 1 de l'entree 1
+                </li>
+                <li>
+                    <div class="nom">entree1</div>
+                    <br/>Description 1 de l'entree 1
+                </li>
+            </ul>
+        </div>
+        <div class="plat"><p class="foodTitle">Plat(s) :</p>
+            <ul>
+                <li>
+                    <div class="nom">Plat1</div>
+                    <br/>Description 1 du plat 1
+                </li>
+            </ul>
+        </div>
+        <div class="dessert"><p class="foodTitle">Dessert(s) :</p>
+            <ul>
+                <li>
+                    <div class="nom">Dessert1</div>
+                    <br/>Description 1 du dessert1
+                </li>
+                <li>
+                    <div class="nom">Dessert1</div>
+                    <br/>Description 1 du dessert1
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="menu"><h2>Menu à 12.5€, boisson
+        incluse au choix</h2>
+        <div class="entree"><p class="foodTitle">Entrée(s) :</p>
+            <ul>
+                <li>
+                    <div class="nom">entree1</div>
+                    <br/>Description 1 de l'entree 1
+                </li>
+            </ul>
+        </div>
+        <div class="plat"><p class="foodTitle">Plat(s) :</p>
+            <ul>
+                <li>
+                    <div class="nom">Plat1</div>
+                    <br/>Description 1 du plat 1
+                </li>
+            </ul>
+        </div>
+        <div class="dessert"><p class="foodTitle">Dessert(s) :</p>
+            <ul>
+                <li>
+                    <div class="nom">Dessert1</div>
+                    <br/>Description 1 du dessert1
+                </li>
+                <li>
+                    <div class="nom">Dessert1</div>
+                    <br/>Description 1 du dessert1
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="menu"><h2>Menu à 12.5€, boisson
         non-incluse</h2>
         <div class="entree"><p class="foodTitle">Entrée(s) :</p>
             <ul>
@@ -231,7 +350,7 @@
         <div class="fromage"><p class="foodTitle">Fromage(s) :</p>
             <ul>
                 <li>
-                    <div class="nom">Fromage1</div>
+                    <div class="nom"><i class="fa-solid fa-cheese"/>Fromage1</div>
                     <br/>Description 1 du fromage 1
                 </li>
             </ul>
@@ -293,7 +412,7 @@
         <div class="fromage"><p class="foodTitle">Fromage(s) :</p>
             <ul>
                 <li>
-                    <div class="nom">Fromage1</div>
+                    <div class="nom"><i class="fa-solid fa-cheese"/>Fromage1</div>
                     <br/>Description 1 du fromage 1
                 </li>
             </ul>
@@ -307,7 +426,37 @@
             </ul>
         </div>
     </div>
-
+    <div class="menu"><h2>Menu à 12.5€, boisson
+        incluse au choix</h2>
+        <div class="entree"><p class="foodTitle">Entrée(s) :</p>
+            <ul>
+                <li>
+                    <div class="nom">entree1</div>
+                    <br/>Description 1 de l'entree 1
+                </li>
+            </ul>
+        </div>
+        <div class="plat"><p class="foodTitle">Plat(s) :</p>
+            <ul>
+                <li>
+                    <div class="nom">Plat1</div>
+                    <br/>Description 1 du plat 1
+                </li>
+            </ul>
+        </div>
+        <div class="dessert"><p class="foodTitle">Dessert(s) :</p>
+            <ul>
+                <li>
+                    <div class="nom">Dessert1</div>
+                    <br/>Description 1 du dessert1
+                </li>
+                <li>
+                    <div class="nom">Dessert1</div>
+                    <br/>Description 1 du dessert1
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
 <div class="boissons"><p class="foodTitle">Boissons :</p>
     <ul>
@@ -324,12 +473,21 @@
             </li>
         </div>
         <div class="boisson">
-            <li>Café : 2€
+            <li>Café : 1€
             </li>
         </div>
-        <div class="boisson">
-            <li>Vin : 4€
-            </li>
+    </ul>
+</div>
+<div class="paiements"><p class="foodTitle">Moyens de paiement :</p>
+    <ul>
+        <div class="moyen">
+            <li>Carte Bancaire</li>
+        </div>
+        <div class="moyen">
+            <li>Paypal</li>
+        </div>
+        <div class="moyen">
+            <li>Espece</li>
         </div>
     </ul>
 </div>
